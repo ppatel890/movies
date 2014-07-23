@@ -94,7 +94,7 @@ def delete_favorite(request):
 def tinder(request):
     return render(request, 'tinder.html')
 
-
+@csrf_exempt
 def new_favorite(request):
     if request.method == 'POST':
         data = json.loads(request.body)
@@ -103,3 +103,11 @@ def new_favorite(request):
             poster=data['poster'],
             identifier=data['identifier']
         )
+
+        movie_info = {
+            'title': new_favorite.title,
+            'poster': new_favorite.poster,
+            'identifier': new_favorite.identifier
+        }
+
+        return render_to_response('movie_template.html', movie_info)
