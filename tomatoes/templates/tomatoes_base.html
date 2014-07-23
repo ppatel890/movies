@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Rotten Tomatoes</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h1>Find Your Favorite Movies</h1>
+        <form id="searchForm">
+            <input type="text" id="searchValue" placeholder="Enter Movie">
+            <input id="arrayLimit" placeholder="Search Results">
+        </form>
+        <button id="getMovie">Search</button>
+        <button id="viewFavorites">View Favorite Movies</button>
+    </div>
+
+    <div class="searchResults">
+    </div>
+
+    <div class="movieInfoContainer">
+    </div>
+
+    <div class="favoritesDiv">
+    </div>
+
+</body>
+</html>

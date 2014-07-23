@@ -1,0 +1,28 @@
+<div class="favoriteWrapper">
+    <h2>Favorite Movies</h2>
+
+    {% for movie in movies %}
+        <div class="favoriteMovie">
+            <h4>
+                {{ movie.title }}
+            </h4>
+
+            <img src="{{ movie.poster }}">
+
+            <p>
+                Released In: {{ movie.release_year }}
+            </p>
+
+            <p>
+                Score: {{ movie.critic_rating }}
+            </p>
+
+{#            <p>#}
+{#                {{ movie.synopsis }}#}
+{#            </p>#}
+
+            <p><button class="removeFavorite" data-title="{{ movie.title }}">Remove from Favorites</button></p>
+        </div>
+        <hr>
+    {% endfor %}
+</div>

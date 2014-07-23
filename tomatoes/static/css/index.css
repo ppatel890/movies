@@ -1,0 +1,38 @@
+body {
+    background-color: steelblue;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.nav {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.movieItem {
+    text-align: center;
+}
+
+.favoriteWrapper {
+    text-align: center;
+}
+
+button {
+    -webkit-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
+	background-color:slategray;
+	border:1px solid #29447E;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;
+	font-size:12px;
+	font-weight:700;
+	padding:5px 6px;
+    margin-top: 5px;
+	height:28px;
+	color:#fff;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+
+
