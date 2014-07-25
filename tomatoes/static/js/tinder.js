@@ -47,7 +47,7 @@ $(document).ready(function(){
 //                        movieInfo.selfLink=movie.movie.links.self;
                         var movieLink = response.movies[i].links.self;
                         movie_list.push(movieInfo);
-                         $('#recommended').append("<div><p>"+response.movies[i].title +"</p>" +
+                         $('#recommended').append("<div class='recMovie'><p>"+response.movies[i].title +"</p>" +
                              "<div><p><button class='learnMore' data-link="+movieLink+">Learn More</button></p></div>" +
                              "<p><button class='favoriteBtn' data-id="+i+">Favorite It</button></p></div>");
                         console.log(movieLink)

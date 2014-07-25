@@ -16,6 +16,22 @@ body {
     text-align: center;
 }
 
+.recMovie {
+    border: black 2px solid;
+    width: 20%;
+    height:40%;
+    margin: 1rem auto;
+
+    text-align: center;
+}
+
+#search {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
 button {
     -webkit-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;
 	-moz-box-shadow:rgba(0,0,0,0.0.1) 0 1px 0 0;

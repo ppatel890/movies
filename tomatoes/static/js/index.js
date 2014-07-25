@@ -92,6 +92,8 @@ $(document).ready(function(){
                 $('.searchResults').hide();
                 $('.favoritesDiv').html(response).show();
 
+
+
                 $('.removeFavorite').on('click', function(){
 
                     $(this).text('Deleted');
@@ -118,9 +120,12 @@ $(document).ready(function(){
             error: function(error_response){
                 console.log(error_response)
             }
+        }).complete(function(){
+            $('#accordion').accordion({active: 0});
         })
 
     })
+
 
 });
 
