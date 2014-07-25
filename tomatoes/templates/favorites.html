@@ -32,8 +32,8 @@
         <h3 class="ui-accordion-header">{{ movie.title }}</h3>
         <div class="ui-accordion-content">
             <p><img src="{{ movie.poster }}"></p>
-            <p>Released In: {{ movie.release_year }}</p>
             <p>Score: {{ movie.critic_rating }}</p>
+            <p>Released In: {{ movie.release_year }}</p>
             <p><button class="removeFavorite" data-title="{{ movie.title }}">Remove from Favorites</button></p>
         </div>
         {% endfor %}
